@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EA74EC65-A9FB-428B-888B-7C824BE82FAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80BE9F1A-8565-4A61-9265-3F86D0380C91}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ContactList", "src\ContactList\ContactList.xproj", "{F4E7DFFC-3144-4376-85F7-EEEBC8BE40C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4E7DFFC-3144-4376-85F7-EEEBC8BE40C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E7DFFC-3144-4376-85F7-EEEBC8BE40C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E7DFFC-3144-4376-85F7-EEEBC8BE40C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E7DFFC-3144-4376-85F7-EEEBC8BE40C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4E7DFFC-3144-4376-85F7-EEEBC8BE40C8} = {EA74EC65-A9FB-428B-888B-7C824BE82FAF}
+	EndGlobalSection
+EndGlobal

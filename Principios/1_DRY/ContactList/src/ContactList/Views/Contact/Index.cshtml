@@ -1,0 +1,36 @@
+﻿@model IList<ContactList.Models.ContactGridItemViewModel>
+
+@{
+    ViewBag.Title = "Contact List";
+    Layout = "_Layout";
+}
+
+<h2>Contact List</h2>
+<a asp-controller="Contact" asp-action="Index" class="btn btn-default">DDBB</a>
+<a asp-controller="Contact" asp-action="GetContactFromCsv" class="btn btn-default">CSV</a>
+<a asp-controller="Contact" asp-action="GetContactFromService" class="btn btn-default">Service</a>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"><span class="lead">Nombre</span></div>
+        <div class="col-md-2"><span class="lead">Apellido</span></div>
+        <div class="col-md-2"><span class="lead">Email</span></div>
+        <div class="col-md-2"><span class="lead">Direccion</span></div>
+        <div class="col-md-2"><span class="lead">Provincia</span></div>
+        <div class="col-md-2"><span class="lead">Pais</span></div>
+    </div>
+    @for (int index = 0; index < Model.Count; index++)
+    {
+        <div class="row">
+            <div class="col-md-2">@Model.ElementAt(index).FirstName</div>
+            <div class="col-md-2">@Model.ElementAt(index).LastName</div>
+            <div class="col-md-2">@Model.ElementAt(index).Email</div>
+            <div class="col-md-2">@Model.ElementAt(index).Address</div>
+            <div class="col-md-2">@Model.ElementAt(index).StateName</div>
+            <div class="col-md-2">@Model.ElementAt(index).CountryName</div>
+        </div>
+    }
+</div>
+
+
+
